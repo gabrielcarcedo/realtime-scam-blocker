@@ -67,7 +67,7 @@ const HeroSection = ({ onStartCall }: HeroSectionProps) => {
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button 
               variant="hero" 
               size="lg" 
@@ -75,9 +75,6 @@ const HeroSection = ({ onStartCall }: HeroSectionProps) => {
               onClick={onStartCall}
             >
               Start Protection
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-              View Demo
             </Button>
           </div>
         </div>
