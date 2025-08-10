@@ -15,7 +15,7 @@ const CTASection = () => {
             </div>
             
             <h2 className="text-4xl font-bold mb-6">
-              Ready to Protect Yourself?
+              Start Your Protection
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
