@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Shield, Mic, Brain, Globe } from "lucide-react";
 import heroImage from "@/assets/hero-shield.jpg";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  onStartCall?: () => void;
+}
+
+const HeroSection = ({ onStartCall }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -64,7 +68,12 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={onStartCall}
+            >
               Start Protection
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4">
