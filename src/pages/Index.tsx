@@ -5,7 +5,7 @@ import CallScreen from "@/components/CallScreen";
 import CallReport from "@/components/CallReport";
 import FeaturesSection from "@/components/FeaturesSection";
 import StatsSection from "@/components/StatsSection";
-import CTASection from "@/components/CTASection";
+
 
 interface RiskEvent {
   timestamp: string;
@@ -62,7 +62,6 @@ const Index = () => {
       <FeaturesSection />
       <Dashboard />
       <StatsSection />
-      <CTASection />
     </div>
   );
 };
